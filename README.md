@@ -22,7 +22,7 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
 ### Links
 
 - Solution URL: [https://github.com/Roman-oryol/workit-landing-page](https://github.com/Roman-oryol/workit-landing-page)
-- Live Site URL: []()
+- Live Site URL: [https://ro-workit-landing-page.netlify.app/](https://ro-workit-landing-page.netlify.app/)
 
 ## My process
 
