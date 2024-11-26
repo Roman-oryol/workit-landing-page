@@ -1,0 +1,51 @@
+.features {
+  position: relative;
+  padding-top: var(--spacing-800);
+  padding-bottom: calc(var(--spacing-800) + 6.4%);
+  background-color: var(--color-slate-100);
+
+  @media (min-width: 600px) {
+    padding-top: var(--spacing-700);
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: var(--spacing-1100);
+    padding-bottom: calc(var(--spacing-1800) + 72px);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 6.4%;
+    background: var(--color-slate-100)
+      url('/src/assets/images/ornamental-light.svg') no-repeat left 0 bottom 0;
+    background-size: cover;
+
+    @media (min-width: 600px) {
+      padding-top: 9.38%;
+      background-image: url('/src/assets/images/ornamental-light-tablet.svg');
+    }
+
+    @media (min-width: 1200px) {
+      padding-top: 5%;
+      background-image: url('/src/assets/images/ornamental-light-desktop.svg');
+      z-index: 1;
+    }
+  }
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+
+    li {
+      width: calc(100% / 3);
+    }
+  }
+}

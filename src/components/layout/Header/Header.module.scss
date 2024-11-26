@@ -1,0 +1,80 @@
+.header {
+  position: relative;
+  margin-bottom: 80px;
+  padding-bottom: 6.4%;
+  background-color: var(--color-slate-900);
+
+  @media (min-width: 600px) {
+    margin-bottom: 136px;
+    padding-bottom: 7.3%;
+    background-image: url('/public/images/bg-pattern-1.svg'),
+      url('/public/images/bg-pattern-2.svg');
+    animation: movePattern 2s ease forwards;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 160px;
+    padding-bottom: 72px;
+    background-position: top 115px left -105px, top 315px right -45px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 6.4%;
+    background-image: url('/src/assets/images/ornamental-dark.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: 600px) {
+      padding-top: 7.3%;
+      background-image: url('/src/assets/images/ornamental-dark-tablet.svg');
+    }
+
+    @media (min-width: 1200px) {
+      padding-top: 5%;
+      background-image: url('/src/assets/images/ornamental-dark-desktop.svg');
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    height: 184px;
+    width: 100%;
+    background-size: contain;
+    background: url('/images/image-hero.webp') center no-repeat,
+      linear-gradient(transparent 103px, var(--color-slate-100) 103px);
+    background-size: contain;
+
+    @media (min-width: 600px) {
+      height: 296px;
+      bottom: -136px;
+      background: url('/images/image-hero.webp') center no-repeat,
+        linear-gradient(transparent 159px, var(--color-slate-100) 159px);
+      background-size: contain;
+    }
+
+    @media (min-width: 1200px) {
+      height: 441px;
+      bottom: -160px;
+      background: url('/images/image-hero.webp') center no-repeat,
+        linear-gradient(transparent 280px, var(--color-slate-100) 280px);
+      background-size: contain;
+    }
+  }
+}
+
+@keyframes movePattern {
+  from {
+    background-position: top 40px left -330px, top 220px right -170px;
+  }
+  to {
+    background-position: top 60px left -225px, top 260px right -95px;
+  }
+}

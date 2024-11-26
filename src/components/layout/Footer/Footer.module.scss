@@ -1,0 +1,13 @@
+.footer {
+  padding: var(--spacing-1000);
+
+  @media (min-width: 1200px) {
+    padding: var(--spacing-1400);
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: var(--spacing-700);
+  }
+}

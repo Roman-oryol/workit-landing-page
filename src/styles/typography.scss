@@ -1,0 +1,39 @@
+.text-preset-1 {
+  font-family: var(--font-family-secondary);
+  font-size: var(--text-preset-1);
+  line-height: 1;
+  font-weight: 600;
+}
+
+.text-preset-2 {
+  font-family: var(--font-family-secondary);
+  font-size: var(--text-preset-2);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.text-preset-3 {
+  font-family: var(--font-family-secondary);
+  font-size: var(--text-preset-3);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.text-preset-4 {
+  font-family: var(--font-family-primary);
+  font-size: var(--text-preset-4);
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.text-preset-5 {
+  font-family: var(--font-family-primary);
+  font-size: var(--text-preset-5);
+  line-height: 1.8;
+  font-weight: 700;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+}
